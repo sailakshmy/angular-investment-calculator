@@ -5,8 +5,8 @@ import { InvestmentInput, InvestmentOutput } from "./app.model";
   providedIn: "root",
 })
 export class InvestmentService {
-  resultsData?: InvestmentOutput[] = [];
-  //   resultsData = signal<InvestmentOutput[]>([]);
+  //   resultsData?: InvestmentOutput[] = [];
+  resultsData = signal<InvestmentOutput[]>([]);
   calculateInvestmentResults({
     initialInvestment,
     duration,
@@ -32,7 +32,7 @@ export class InvestmentService {
       });
     }
     console.log("Annual Data", annualData);
-    this.resultsData = annualData;
-    // this.resultsData.set(annualData);
+    // this.resultsData = annualData;
+    this.resultsData.set(annualData);
   }
 }
