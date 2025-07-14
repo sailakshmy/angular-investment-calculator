@@ -6,9 +6,9 @@ import { InvestmentResultsComponent } from "./components/investment-results/inve
 
 @Component({
   selector: "app-root",
-  standalone: true,
+  // standalone: true,
   templateUrl: "./app.component.html",
-  imports: [HeaderComponent, UserInputComponent, InvestmentResultsComponent],
+  // imports: [HeaderComponent, UserInputComponent, InvestmentResultsComponent],
 })
 export class AppComponent {
   // resultsData?: InvestmentOutput[] = [];
