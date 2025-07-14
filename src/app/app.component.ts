@@ -10,7 +10,7 @@ import { InputData } from "./app.model";
   imports: [HeaderComponent, UserInputComponent],
 })
 export class AppComponent {
-  calculateInvestmentResults({
+  onCalculateInvestmentResults({
     initialInvestment,
     duration,
     expectedReturn,
@@ -34,7 +34,7 @@ export class AppComponent {
         totalAmountInvested: initialInvestment + annualInvestment * year,
       });
     }
-
+    console.log("Annual Data", annualData);
     return annualData;
   }
 }
